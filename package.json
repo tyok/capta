@@ -1,0 +1,28 @@
+{
+  "name": "capta",
+  "version": "0.1.0",
+  "description": "Capture promise value for ad-hoc use",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha"
+  },
+  "keywords": [
+    "promise",
+    "development",
+    "console",
+    "capture"
+  ],
+  "author": "Mohammad Satrio",
+  "license": "ISC",
+  "devDependencies": {
+    "bluebird": "^2.3.5",
+    "chai": "^1.9.2",
+    "chai-as-promised": "^4.1.1",
+    "mocha": "^1.21.5",
+    "q": "^1.0.1",
+    "rsvp": "^3.0.14",
+    "sinon": "^1.10.3",
+    "sinon-chai": "^2.6.0",
+    "when": "^3.5.0"
+  }
+}
