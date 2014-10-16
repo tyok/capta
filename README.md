@@ -1,5 +1,9 @@
 # capta
 
+```
+npm install capta
+```
+
 Capta was born to make playing with promise in REPL easier.
 It will tell you when the promise is resolved
 and store the values in `obj._`.
