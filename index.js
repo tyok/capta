@@ -1,5 +1,6 @@
 module.exports = capta;
 module.exports.first = captaFirst;
+module.exports.one = captaFirst;
 
 function capta(promise) {
   var trap = {};
