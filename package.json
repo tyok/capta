@@ -6,6 +6,11 @@
   "scripts": {
     "test": "./node_modules/.bin/mocha"
   },
+  "homepage": "https://github.com/tyok/capta",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tyok/capta.git"
+  },
   "keywords": [
     "promise",
     "development",
