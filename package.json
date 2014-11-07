@@ -1,6 +1,6 @@
 {
   "name": "capta",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Capture promise value for ad-hoc use",
   "main": "index.js",
   "scripts": {
