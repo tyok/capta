@@ -1,8 +1,8 @@
 module.exports = capta;
-module.exports.first = captaFirst;
-module.exports.one = captaFirst;
+module.exports.spread = captaSpread;
+module.exports.all = captaSpread;
 
-function capta(promise) {
+function captaSpread(promise) {
   var trap = {};
 
   capture(promise, function(error, result) {
@@ -13,7 +13,7 @@ function capta(promise) {
   return trap;
 }
 
-function captaFirst(promise) {
+function capta(promise) {
   var trap = {};
 
   capture(promise, function(error, result) {

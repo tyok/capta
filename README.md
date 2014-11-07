@@ -6,7 +6,7 @@ npm install capta
 
 Capta was born to make playing with promise in REPL easier.
 It will tell you when the promise is resolved
-and store the values in `obj._`.
+and store the value in `obj._`.
 
 ```javascript
 $ node
@@ -15,7 +15,7 @@ $ node
 // wait a bit...
 Promise captured!
 > result._
-['some value']
+'some value'
 ```
 
 When the promise encounters an error,
@@ -31,15 +31,15 @@ Promise error!
 'some error'
 ```
 
-If you know the promise will only return a single value,
-use `cap.first` or `cap.one`:
+If you know the promise will return multiple arguments,
+use `cap.spread` or `cap.all`:
 
 ```javascript
 $ node
 > var cap = require('capta');
-> var result = cap.first(somePromise);
+> var result = cap.spread(somePromise);
 // wait a bit...
 Promise captured!
 > result._
-'some value'
+['some value']
 ```

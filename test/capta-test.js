@@ -57,15 +57,15 @@ describe('capta', function() {
     successLogCounter = errorLogCounter = 0;
   });
 
-  describe('.first', function() {
+  describe('.spread', function() {
     it('captures promise result', function() {
       var allPromises = promises(function(resolve) { resolve('hello') });
 
-      var results = allPromises.map(cap.first);
+      var results = allPromises.map(cap.spread);
 
       Bluebird.all(allPromises).then(function() {
         results.forEach(function(r) {
-          expect(r._).to.eq('hello');
+          expect(r._).to.deep.eq(['hello']);
         });
       });
     });
@@ -79,7 +79,7 @@ describe('capta', function() {
 
     Bluebird.all(allPromises).then(function() {
       results.forEach(function(r) {
-        expect(r._).to.deep.eq(['hello']);
+        expect(r._).to.eq('hello');
       });
     });
   });
